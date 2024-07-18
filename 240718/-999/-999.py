@@ -1,4 +1,5 @@
 a = list(map(int, input().split()))
-a = a[:-1]
+ind = a.index(-999)
+a = a[:ind]
 print(max(a), end =' ')
 print(min(a))
