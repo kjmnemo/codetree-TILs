@@ -16,7 +16,7 @@ def dfs(start):
     global visit
 
     for i in range(n):
-        if arr[start][i] == 1:
+        if arr[start][i] == 1 and i not in visit:
             arr[start][i] -= 1
             visit.add(i)
             dfs(i)
