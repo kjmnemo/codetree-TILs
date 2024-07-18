@@ -10,7 +10,7 @@ for _ in range(m):
     arr[x-1][y-1] = 1
     arr[y-1][x-1] = 1
 
-visit = set()
+visit = set(0)
 
 def dfs(start):
     global visit
