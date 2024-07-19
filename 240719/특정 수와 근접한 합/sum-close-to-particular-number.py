@@ -9,7 +9,8 @@ alst = list(map(int, input().split()))
 
 from itertools import combinations
 blst = list(combinations(alst,n-2))
-ans = 200
+ans = int(1e9)
+
 for j in blst:
     tmp = abs(s - sum(j))
     ans = min(tmp,ans)
