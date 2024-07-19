@@ -32,6 +32,7 @@ def dfs(cnt, result, tmp):
         dfs(cnt+1, result, tmp)
     else:
         dfs(cnt+1, nwresult, tmp+1)
+        dfs(cnt+1, result, tmp)
 
 dfs(0, [0]*10, 0)
 print(ans)
