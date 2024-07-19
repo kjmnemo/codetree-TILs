@@ -17,9 +17,6 @@ ans = 0
 
 for i in klst[::-1]:
     tmp = i*num
-    if tmp > ans:
-        ans = tmp
-    else:
-        print(ans)
-        break
+    ans = max(ans,tmp)
     num += 1
+print(ans)
