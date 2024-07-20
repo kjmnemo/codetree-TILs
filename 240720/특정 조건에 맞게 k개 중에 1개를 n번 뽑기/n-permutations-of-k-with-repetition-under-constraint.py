@@ -6,9 +6,10 @@ def dfs(n, alst):
     if n == N:
         print(*alst)
         return
+
     for j in klst:
-        if len(alst)>2:
-            if alst[-1]==j and alst[-2]!=j:
+        if len(alst)>=2:
+            if alst[-1]==j and alst[-2]==j:
                 continue
         dfs(n+1, alst+[j])
 dfs(0,[])
