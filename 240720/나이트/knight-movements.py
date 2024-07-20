@@ -1,5 +1,8 @@
 n = int(input())
 r1, c1, r2, c2 = map(int, input().split())
+if r1==c1 and r2==c2:
+    print(1)
+    exit()
 
 arr = [[0]*n for _ in range(n)]
 v = [[0]*n for _ in range(n)]
