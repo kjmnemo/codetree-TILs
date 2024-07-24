@@ -9,8 +9,7 @@ for i in range(n):
     blst = alst[:]
     for j in range(n):
         dlst = blst[:]
-        c = dlst[j]
-        dlst.remove(c)
+        dlst.pop(j)
         tmp = 0
         for k in range(n-2):
             tmp += abs(dlst[k]-dlst[k+1])
