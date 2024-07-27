@@ -11,4 +11,4 @@ for _ in range(5):
 lowest= min(agents, key=lambda agent: agent.score)
 
 
-print(f'{lowest_score_agent.codename} {lowest.score}')
+print(f'{lowest.codename} {lowest.score}')
